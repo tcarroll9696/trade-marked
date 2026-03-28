@@ -1,19 +1,114 @@
-<section class="trusted-prop-firms">
-    <h2>Trusted Prop Firms</h2>
-    <a href="https://app.fundingpips.com/register?ref=2EFCB156" class="link-button">Join Now</a>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Marked</title>
+  <style>
+    :root {
+      --brand-red: #b30000;
+      --brand-black: #111;
+    }
 
-<style>
-.trusted-prop-firms {
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #fff;
-}
-.link-button {
-    color: white;
-    background-color: var(--brand-red);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-</style>
+    body {
+      margin: 0;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: var(--brand-red);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 220px;
+      width: 60vw;
+      height: auto;
+      display: inline-block;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    .bio {
+      font-size: 1.05em;
+      line-height: 1.7em;
+      color: #222;
+      margin: 0 0 18px;
+    }
+
+    .trusted-prop-firms {
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid #e7e7e7;
+    }
+
+    .trusted-prop-firms h2 {
+      margin: 0 0 10px;
+      font-size: 1.25em;
+      color: #111;
+    }
+
+    .prop-firm-card {
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .prop-firm-card h3 {
+      margin: 0;
+      font-size: 1.05em;
+      color: #222;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--brand-red);
+      color: #fff;
+      font-weight: 700;
+      padding: 10px 14px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      header img { max-width: 180px; }
+      .bio { font-size: 1em; }
+      .prop-firm-card { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/tm-logo.png" alt="TM Logo" />
+  </header>
+
+  <main>
+    <p class="bio">
+      Hello, I am a 29-year-old day trader with 8 years of experience. My passion is to help traders become profitable and learn a skill they can use the rest of their lives. Everything I share is free and not financial advice. If you have any questions, please feel free to reach out. Any of these codes I have provides are trusted, reputable companies that are trusted within the community.
+    </p>
+
+    <section class="trusted-prop-firms">
+      <h2>Trusted Prop Firms</h2>
+
+      <div class="prop-firm-card">
+        <h3>FundingPips</h3>
+        <a class="btn" href="https://app.fundingpips.com/register?ref=2EFCB156" target="_blank" rel="noopener noreferrer">
+          Use My Code
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
