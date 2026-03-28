@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trade Marked</title>
-    <style>
-        body {
-            background-color: #ffffff;
-            color: #000000;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #b30000;
-            padding: 20px;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Marked</title>
+  <style>
+    :root {
+      --brand-red: #b30000;
+      --brand-black: #111;
+    }
+
+    body {
+      margin: 0;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: var(--brand-red);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 220px;
+      width: 60vw;
+      height: auto;
+      display: inline-block;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    .bio {
+      font-size: 1.05em;
+      line-height: 1.7em;
+      color: #222;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        max-width: 180px;
+      }
+      .bio {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="path/to/tm-logo.png" alt="TM Logo">
-    </header>
+  <header>
+    <img src="path/to/tm-logo.png" alt="TM Logo" />
+  </header>
 
-    <main>
-        <!-- Main content goes here -->
-    </main>
+  <main>
+    <p class="bio">Hello, I am a 29-year-old day trader with 8 years of experience. My passion is to help traders become profitable and learn a skill they can use the rest of their lives. Everything I share is free and not financial advice. If you have any questions, please feel free to reach out. Any of these codes I have provides are trusted, reputable companies that are trusted within the community.</p>
+  </main>
 </body>
 </html>
