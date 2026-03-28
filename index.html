@@ -5,26 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trade Marked™ | Creator Hub</title>
   <style>
+    :root {
+      --brand-red: #b30000;
+      --brand-black: #111;
+    }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #f4f4f4;
       color: #222;
     }
+
     header {
-      background-color: #b30000;
+      background-color: var(--brand-red);
       color: white;
       text-align: center;
       padding: 2.5em 1em;
     }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.3em;
+
+    header h1.brand {
+      margin: 0;
+      display: inline-flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 10px;
+      font-size: 2.6em;
+      letter-spacing: 0.02em;
+      line-height: 1;
+      font-weight: 800;
     }
+
+    header h1.brand .brand-text {
+      color: #fff;
+    }
+
+    header h1.brand .brand-tm {
+      color: var(--brand-black);
+      font-weight: 900;
+      font-size: 2.1em;
+      line-height: 0.8;
+      transform: translateY(-0.35em);
+    }
+
     header p {
       color: #f0f0f0;
       font-size: 1.1em;
     }
+
     section {
       max-width: 900px;
       margin: 2em auto;
@@ -33,17 +61,20 @@
       padding: 2em;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
+
     h2 {
-      color: #b30000;
+      color: var(--brand-red);
       text-align: center;
       margin-bottom: 1em;
     }
+
     .bio {
       text-align: center;
       font-size: 1.05em;
       margin-bottom: 2.5em;
       line-height: 1.6em;
     }
+
     .code-card {
       background: #eef2f5;
       border-radius: 8px;
@@ -52,23 +83,27 @@
       text-align: center;
       transition: transform 0.2s ease;
     }
+
     .code-card:hover {
       transform: translateY(-3px);
     }
+
     .code-card h3 {
       margin-top: 0;
       color: #222;
     }
+
     .code-card a {
       display: inline-block;
       margin-top: 0.5em;
       text-decoration: none;
       color: white;
-      background-color: #b30000;
+      background-color: var(--brand-red);
       padding: 0.6em 1.2em;
       border-radius: 5px;
       font-weight: bold;
     }
+
     footer {
       text-align: center;
       padding: 1.5em 1em;
@@ -76,6 +111,7 @@
       color: #666;
       background-color: #fafafa;
     }
+
     /* Floating Twitter Button */
     .floating-btn {
       position: fixed;
@@ -90,13 +126,20 @@
       text-decoration: none;
       transition: transform 0.25s ease;
     }
+
     .floating-btn:hover {
       transform: scale(1.1);
     }
+
     @media screen and (max-width: 700px) {
-      header h1 {
-        font-size: 2em;
+      header h1.brand {
+        font-size: 2.1em;
       }
+
+      header h1.brand .brand-tm {
+        font-size: 1.9em;
+      }
+
       section {
         margin: 1em;
         padding: 1.5em;
@@ -106,18 +149,22 @@
 </head>
 <body>
   <header>
-    <h1>Trade Marked™</h1>
+    <h1 class="brand">
+      <span class="brand-text">Trade Marked</span>
+      <span class="brand-tm">TM</span>
+    </h1>
     <p>Simplifying Trading Since 2018</p>
   </header>
 
   <section>
     <h2>About Me</h2>
     <p class="bio">
-      Hello, I am <strong>Trade Marked™</strong> — i have been trading for 7 years.
-      <br />
-    It has been one fulfilling journey. My purpose now is to help other traders gain an edge.
-      <br />
-    My hope is to help you reach your finanncial goals and to help every trader become profitbale!
+      Hey, I’m <strong>Trade Marked™</strong> — a 29‑year‑old trader from America.
+      I’ve been trading since 2018 with one mission: to simplify the world of trading
+      and make it easier to understand, practice, and stay consistent.
+      My goal is to help others learn step‑by‑step, sharpen their skills, and build the confidence
+      they need to grow their skills and financial freedom over time—without the unnecessary noise
+      and confusion that holds most people back.
     </p>
 
     <h2>Creator Codes</h2>
@@ -125,21 +172,11 @@
     <div class="code-card">
       <h3>FundingPips</h3>
       <p>Start your prop firm journey with FundingPips and take your trading to the next level.</p>
-      <a
-        href="https://app.fundingpips.com/register?ref=2EFCB156"
-        target="_blank"
-        rel="noopener noreferrer"
-      >Use My Code</a>
+      <a href="https://app.fundingpips.com/register?ref=2EFCB156" target="_blank" rel="noopener noreferrer">Use My Code</a>
     </div>
   </section>
 
-  <a
-    class="floating-btn"
-    href="https://x.com/FibonacciFX"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Follow on X (Twitter)"
-  >🐦</a>
+  <a class="floating-btn" href="https://x.com/FibonacciFX" target="_blank" rel="noopener noreferrer" title="Follow on X (Twitter)">🐦</a>
 
   <footer>
     © 2026 Trade Marked™ | Built for the trading community 🧠📈
